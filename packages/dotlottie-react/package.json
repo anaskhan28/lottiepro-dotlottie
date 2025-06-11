@@ -1,0 +1,21 @@
+{
+    "name": "@lottiepro-web/dotlottie-react",
+    "version": "0.0.1",
+    "main": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "scripts": {
+      "build": "tsc",
+      "dev": "tsc --watch"
+    },
+    "dependencies": {
+      "@lottiepro-web/dotlottie-core": "workspace:*",
+      "react": "^18.2.0"
+    },
+    "devDependencies": {
+      "@types/react": "^18.2.0",
+      "typescript": "^5.0.4"
+    },
+    "peerDependencies": {
+      "react": "^18.0.0"
+    }
+  }

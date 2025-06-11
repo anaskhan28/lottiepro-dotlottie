@@ -1,0 +1,21 @@
+{
+  "name": "@lottiepro-web/dotlottie-vue",
+  "version": "0.0.1",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "@lottiepro-web/dotlottie-core": "workspace:*",
+    "vue": "^3.4.0"
+  },
+  "devDependencies": {
+    "@types/vue": "^2.0.0",
+    "typescript": "^5.0.4"
+  },
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  }
+}
