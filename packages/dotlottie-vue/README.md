@@ -1,22 +1,52 @@
 # @lottiepro-web/dotlottie-vue
 
-A Vue 3 component for rendering .lottie and .json animations using @lottiepro-web/dotlottie-core.
+Vue components for dotLottie animation format.
+
+## Installation
+
+```bash
+npm install @lottiepro-web/dotlottie-vue
+```
 
 ## Usage
 
 ```vue
-<script setup lang="ts">
-import { DotLottieComponent, useDotLottieControls } from '@lottiepro-web/dotlottie-vue';
-const lottieRef = useDotLottieControls();
-</script>
-
 <template>
-  <DotLottieComponent
-    ref="lottieRef"
-    src="/path/to/animation.lottie"
-    :loop="true"
-    style="width: 400px; height: 400px;"
-  />
-  <button @click="lottieRef.value?.play()">Play</button>
+  <div>
+    <DotLottiePlayer
+      :src="animationSrc"
+      :style="{ width: '300px', height: '300px' }"
+      :autoplay="true"
+      :loop="true"
+    />
+  </div>
 </template>
-``` 
+
+<script setup lang="ts">
+import { DotLottiePlayer } from '@lottiepro-web/dotlottie-vue';
+
+const animationSrc = 'path/to/animation.lottie';
+</script>
+```
+
+## Props
+
+- `src`: Path to the .lottie file
+- `autoplay`: Whether to start playing automatically
+- `loop`: Whether to loop the animation
+- `speed`: Playback speed (default: 1)
+- `theme`: Theme to apply (if available)
+- `marker`: Marker to start from (if available)
+- `style`: CSS styles for the container
+- `class`: CSS class name for the container
+
+## Features
+
+- Vue component wrapper for dotLottie
+- Full TypeScript support
+- All core functionality available
+- Easy to use props interface
+
+## License
+
+MIT 

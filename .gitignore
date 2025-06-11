@@ -9,3 +9,6 @@ dist
 .DS_Store
 .idea
 .vscode
+.turbo
+*.log
+package-lock.json

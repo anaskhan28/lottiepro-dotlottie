@@ -1,14 +1,23 @@
 {
   "name": "@lottiepro-web/dotlottie-vue",
   "version": "0.0.1",
+  "description": "Vue components for dotLottie animation format",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "dev": "tsc --watch"
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["dotlottie", "lottie", "animation", "vue", "component"],
+  "author": "anaskhan28",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anaskhan28/dotlottie-package.git"
   },
   "dependencies": {
-    "@lottiepro-web/dotlottie-core": "workspace:*",
+    "@lottiepro-web/dotlottie-core": "^0.0.1",
     "vue": "^3.4.0"
   },
   "devDependencies": {
@@ -17,5 +26,9 @@
   },
   "peerDependencies": {
     "vue": "^3.0.0"
-  }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ]
 }

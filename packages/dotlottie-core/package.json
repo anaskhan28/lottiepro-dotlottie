@@ -1,11 +1,20 @@
 {
   "name": "@lottiepro-web/dotlottie-core",
   "version": "0.0.1",
+  "description": "Core functionality for dotLottie animation format support",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "dev": "tsc --watch"
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": ["dotlottie", "lottie", "animation", "core"],
+  "author": "anaskhan28",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/anaskhan28/dotlottie-package.git"
   },
   "dependencies": {
     "@lottiepro-web/core": "^1.0.3",
@@ -13,5 +22,9 @@
   },
   "devDependencies": {
     "typescript": "^5.0.4"
-  }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ]
 }
